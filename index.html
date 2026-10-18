@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="kawaii-premium">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F7F3EE">
+  <title>Feliz Cumplea&ntilde;os con Amor 🐼❤️🐻</title>
+  <meta name="description" content="Un regalo digital de cumplea&ntilde;os lleno de amor, ternura y recuerdos para mi amada futura esposa Lorena, junto a tu Dudu y nuestro hijo Eloy (Dudulino).">
+
+  <!-- Preconexiones a servicios externos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- Tipograf&iacute;as oficiales: Manrope + DM Sans + Caveat -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de Estilos Externa -->
+  <link rel="stylesheet" href="css/style.css?v=9">
+
+  <!-- Librer&iacute;a Externa ConfettiJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@hiseb/confetti@2.2.0/dist/confetti.min.js" defer></script>
+
+  <!-- L&oacute;gica Interactiva Externa -->
+  <script src="js/main.js?v=9" defer></script>
+
+  <!-- Favicon oficial -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+</head>
+<body>
+
+  <!-- Skip link para accesibilidad con teclado -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Fondo atmosf&eacute;rico suave + Efecto Parallax Continuo (Dudu con torta + Bubu enfermera) -->
+  <div class="ambient-canvas" aria-hidden="true">
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Capas Parallax Transparentes en ciclo continuo sin superposici&oacute;n -->
+    <div class="parallax-sleepy-layer p-layer-1">
+      <img src="assets/dudu-cake-sleepy-bubu.png" width="280" height="150" alt="">
+    </div>
+    <div class="parallax-nurse-layer p-layer-2">
+      <img src="assets/bubu-nurse-dudu.png?v=turquesa" width="220" height="220" alt="">
+    </div>
+    <div class="parallax-sleepy-layer p-layer-3">
+      <img src="assets/dudu-cake-sleepy-bubu.png" width="260" height="139" alt="">
+    </div>
+    <div class="parallax-nurse-layer p-layer-4">
+      <img src="assets/bubu-nurse-dudu.png?v=turquesa" width="205" height="205" alt="">
+    </div>
+  </div>
+
+  <!-- Nubecita Flotante al Costado con Parallax: Solo Bubu Dormiloncita -->
+  <aside class="sleepy-bubu-cloud" id="sleepyBubuWidget" aria-label="Bubu dormiloncita flotando en su nubecita">
+    <button type="button" class="sleepy-cloud-btn" id="btnSleepyBubu" aria-label="Tocar nubecita de Bubu dormiloncita">
+      <span class="sleepy-dream-bubble" id="sleepyBubbleText">5 minutitos m&aacute;s, Dudu... ☁️💤</span>
+      <div class="sleepy-cloud-art">
+        <div class="zzz-stream" aria-hidden="true">
+          <span class="zzz z1">z</span>
+          <span class="zzz z2">Z</span>
+          <span class="zzz z3">Z</span>
+        </div>
+        <img class="bubu-sleep-sprite" id="bubuCloudSprite" src="assets/bubu-sleepy-body.png" width="108" height="72" alt="Bubu dormiloncita descansando sobre su nubecita">
+      </div>
+      <span class="sleepy-cloud-tag" id="sleepyCloudTag">Mi dormiloncita 🐼💤</span>
+    </button>
+  </aside>
+
+  <!-- Barra de navegaci&oacute;n fija superior -->
+  <header class="story-header">
+    <a href="#portada" class="story-brand">🎂 Lorena  &amp; Irwin  <span aria-hidden="true">🐼🐻</span></a>
+    <nav class="chapter-dots" aria-label="Escenas de nuestra historia">
+      <button class="dot active" data-target="portada" aria-label="Ir a Portada"></button>
+      <button class="dot" data-target="escena-1" aria-label="Ir a Cap&iacute;tulo I: Atardecer Juntos"></button>
+      <button class="dot" data-target="escena-2" aria-label="Ir a Cap&iacute;tulo II: Risas y Locuras"></button>
+      <button class="dot" data-target="escena-3" aria-label="Ir a Cap&iacute;tulo III: Bajo la Lluvia"></button>
+      <button class="dot" data-target="escena-4" aria-label="Ir a Cap&iacute;tulo IV: Flores y Amor"></button>
+      <button class="dot" data-target="escena-5" aria-label="Ir a Cap&iacute;tulo V: Vacaciones con Eloy (Dudulino)"></button>
+      <button class="dot" data-target="nuestros-recuerdos" aria-label="Ir a Cap&iacute;tulo VI: Nuestros Recuerdos Reales en Polaroid"></button>
+      <button class="dot" data-target="cumpleanos" aria-label="Ir a Cap&iacute;tulo Final: &iexcl;Feliz Cumplea&ntilde;os, Lorena!"></button>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       CONTENIDO PRINCIPAL (<main>) · Componentes cargados desde /pages/
+       ========================================================================= -->
+  <main id="contenido-principal">
+    <app-portada data-include="pages/portada.html"></app-portada>
+    <app-capitulo-1 data-include="pages/capitulo-1.html"></app-capitulo-1>
+    <app-capitulo-2 data-include="pages/capitulo-2.html"></app-capitulo-2>
+    <app-capitulo-3 data-include="pages/capitulo-3.html"></app-capitulo-3>
+    <app-capitulo-4 data-include="pages/capitulo-4.html"></app-capitulo-4>
+    <app-capitulo-5 data-include="pages/capitulo-5.html"></app-capitulo-5>
+    <app-capitulo-6-polaroids data-include="pages/capitulo-6-polaroids.html"></app-capitulo-6-polaroids>
+    <app-capitulo-final data-include="pages/capitulo-final.html"></app-capitulo-final>
+  </main>
+
+  <!-- Componente Footer con Copyright -->
+  <app-footer data-include="pages/footer.html"></app-footer>
+
+</body>
+</html>
